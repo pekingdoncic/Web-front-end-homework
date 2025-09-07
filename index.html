@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <nav class="flex">
+        <div class="nleft">
+            <div class="logo-block">
+                <img src="images/logo1.webp" class="logo">
+            </div>
+            <div class="menu-block full-height flex">
+                <div class="menu-item"><a href="http://www.jingju.com/">京剧艺术网</a></div>
+                <div class="menu-item"><a href="http://www.cnpoc.cn/">国家京剧院</a></div>
+                <div class="menu-item"><a href="http://www.jing-ju.com/">京剧戏曲网</a></div>
+                <div class="menu-item"><a href="https://www.bjo.com.cn/">北京京剧院</a></div>
+                <div class="menu-item"><a href="history.html">历史沿革</a></div>
+                <div class="menu-item"><a href="character.html">文化特征</a></div>
+            </div>
+        </div>
+        <div class="nright">
+            <div class="logo-block"><img src="images/logo.jpg"  class="logo"></div>
+            <div class="menu-item" ><a href="#"id="zhuce">注册</a></div>
+            <div class="menu-item" ><a href="#" id="dl">登录</a></div>
+            <div class="menu-item"><a href="https://www.baidu.com/"><img src="https://www.educoder.net/api/attachments/411643" alt="搜索"></a></div>
+            <div class="menu-item"><a href="#"><img src="https://www.educoder.net/api/attachments/411644" alt="添加"></a></div>
+            <div class="menu-item"><a href="#"><img src="https://www.educoder.net/api/attachments/411645" alt="消息"></a></div>
+        </div>
+    </nav>  
+    <div class="main_bar" id="denglu">   
+        <div id="login_form">  
+            <div class="title">  
+               京剧网系统登录                   
+            </div>      
+            <form action="main.html" onsubmit="return check()">  
+            <div id="form_widget">  
+                <br>  
+                <input type="text" placeholder="请输入账号" id="box_name" class="txt" value="用户名" onfocus="this.value=''" onblur="if(this.value=='')this.value='用户名'"/>  
+                <br>  
+                <input type="password" placeholder="请输入密码" id="box_pass" class="txt" value="password" onfocus="this.value=''" onblur="if(this.value=='')this.value='password'"/>  
+                <br>  
+                <input type="text" id="vcode" placeholder="验证码" value="验证码" onfocus="this.value=''" onblur="if(this.value=='')this.value='验证码'"/><span id="code" title="看不清，换一张"></span>  
+                <div id="search_pass_link">  
+                    <a href="#">忘记密码？</a>  
+                </div>                      
+                <input  type="submit" value="登录" class="btn" onmouseover="this.style.backgroundColor='#FF8D00'" onmouseout="this.style.backgroundColor='#FC5628'"> 
+                <br>
+                <br>  
+                <input type="reset" value="重置" class="btn" onmouseover="this.style.backgroundColor='#FF8D00'" onmouseout="this.style.backgroundColor='#FC5628'"> 
+            </div>  
+            </form>  
+        </div>  
+    </div>      
+    <div id="context">
+        <aside class="mulu">
+            <ul>
+               <li><a href="#i1">1-历史沿革</a></li>
+               <li><a href="#i2">2-文化特征</a></li>
+               <li><a href="#i3">3-传承保护</a></li>
+               <li><a href="#i4">4-主要流派</a></li>
+               <li><a href="#i5">5-戏曲评价</a></li> 
+               <li><a href="#top">返回顶部</a></li>
+            </ul>
+        </aside>
+        <aside class="aside1">
+        </aside>
+        <br>
+        <br>
+     
+        <h1>京剧</h1>
+        <p>京剧，又称平剧、京戏等，中国国粹之一，是中国影响最大的戏曲剧种，分布地以北京为中心，遍及全国各地。</p>
+        <div class="biaoti" id="i1">
+            <h2>1-历史沿革</h2>
+        </div>
+        <div class="article">
+            <img src="images/i4.webp" title="京剧名伶" >
+            <div class="article-text">
+                <p>
+                京剧之名始见于清代光绪二年（1876）的《申报》，历史上曾有皮黄、二黄、黄腔、京调、京戏、平剧、国剧等称谓，清朝乾隆五十五年（1790年）四大徽班进京后与北京剧坛的昆曲、汉剧等剧种经过五、六十年的融汇，衍变成为京剧，是中国最大戏曲剧种。
+                </p>
+            <p>
+            清代乾隆五十五年（1790年）起，原在南方演出的三庆、四喜、春台、和春等多以安徽籍艺人为主的四大徽班陆续进入北京，
+            与来自湖北的汉调艺人合作，同时接受了昆曲、秦腔的部分剧目、曲调和表演方法，又吸收了一些地方民间曲调，
+            通过不断的交流、融合，最终形成京剧。
+            </p>
+                <p><a href="history.html">点击加载更多</a></p>
+            </div>
+        </div>
+            
+        <div class="biaoti">
+            <h2 id="i2" class="biaoti">2-文化特征</h2>
+            </div>
+    <div class="article">
+        <img src="images/h9.webp">
+        <div class="article-text ">
+        <p>京剧较擅长于表现历史题材的政治和军事斗争，故事大多取自历史演义和小说话本。既有整本的大戏，
+        也有大量的折子戏，此外还有一些连接台本戏。</p>
+        <p>京剧在文学、表演、音乐、舞台美术等各个方面都有一套规范化的艺术表现形式。京剧的唱腔属板式变化体，以二簧、西皮为主要声腔。京剧伴奏分文场和武场两大类，文场以胡琴为主奏乐器，武场以鼓板为主。京剧的角色分为生、旦、净、丑、杂、武、流等行当，后三行已不再立专行。各行当都有一套表演程式，唱念做打的技艺各具特色。京剧以历史故事为主要演出内容，传统剧目约有一千三百多个，常演的在三四百个以上。</p>
+        <p><a href="character.html">点击加载更多</a></p>        
+    </div>
+    </div>
+    <div class="biaoti">
+    <h2 id="i3">3-传承保护</h2>
+    </div>
+    <div class="article">
+        <img src="images/i1.jpg" title="梅兰芳">
+        <div class="article-text">
+    <h3>传承价值</h3>
+    <p>京剧舞台艺术在文学、表演、音乐、唱腔、锣鼓、化妆、脸谱等各个方面，通过无数艺人的长期舞台实践，构成了一套互相制约、相得益彰的格律化和规范化的程式。
+        它作为创造舞台形象的艺术手段是十分丰富的，而用法又是十分严格的。
+        不能驾驭这些程式，就无法完成京剧舞台艺术的创造。由于京剧在形成之初，便进入了宫廷，使它的发育成长不同于地方剧种。
+        要求它所要表现的生活领域更宽，所要塑造的人物类型更多，对它的技艺的全面性、完整性也要求得更严，对它创造舞台形象的美学要求也更高。
+        当然，同时也相应地使它的民间乡土气息减弱，纯朴、粗犷的风格特色相对淡薄。因而，它的表演艺术更趋于虚实结合的表现手法，最大限度地超脱了舞台空间和时间的限制，
+        以达到“以形传神，形神兼备”的艺术境界。
+        表演上要求精致细腻，处处入戏；唱腔上要求悠扬委婉，声情并茂；武戏则不以火爆勇猛取胜，而以“武戏文唱”见佳。
+    </p>
+        </div>
+    </div>
+    <div class="index4">
+        <h2 id="i4" style="text-align:center;color:rgba(238, 44, 10, 0.883);text-shadow:2px 2px 4px #000 ;">4-主要流派</h2>
+    <table border="2">
+        <thead >
+            <tr>
+                <th>角色分类</th>
+                <th colspan="3">流派（创始人）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>老生</td>
+                <td colspan="3">谭派（谭鑫培）；汪派（汪桂芬）；孙派（孙菊仙）；汪派（汪笑侬）；王派（王鸿寿）；李派（李洪春）；刘派（刘鸿声）；余派（余叔岩）；言派（言菊朋）；高派（高庆奎）；马派（马连良）；麒派（周信芳）；新谭派（谭富英）；杨派（杨宝森）；奚派（奚啸伯）；唐派（唐韵笙）。</td>
+
+            </tr>
+            <tr>
+                <td>武生</td>
+                <td colspan="3">俞派（俞菊笙）；李派（李春来）；黄派（黄月山）；杨派（杨小楼）；盖派（盖叫天）。</td>
+            </tr>
+            <tr>
+                <td>小生</td>
+                <td colspan="3">程派（程继先）；德派（德珺如）：姜派（姜妙香）；叶派（叶盛兰）。</td>
+                
+            </tr>
+            <tr>
+                <td>旦角</td>
+                <td colspan="3">陈派（陈德霖）；王派（王瑶卿）；梅派（梅兰芳）；尚派（尚小云）；程派（程砚秋）；荀派（荀慧生）；筱派（筱翠花）；黄派（黄桂秋）；张派（张君秋）；徐派（徐碧云）；杜派﹙杜近芳﹚赵派（赵燕侠）；阎派（阎岚秋）；朱派（朱桂芳）；宋派（宋德珠）；关派（关肃霜）。</td>
+                
+            </tr>
+            <tr>
+                <td>老旦</td>
+                <td colspan="3">龚派（龚云甫）；李派（李多奎）；孙派（孙甫亭）；罗派（罗福山）；李派（李金泉）。</td>
+                
+            </tr>
+            <tr>
+                <td>花脸</td>
+                <td colspan="3">何派（何桂山）；金派（金秀山）；裘派（裘桂仙）；金派（金少山）；郝派（郝寿臣）；侯派（侯喜瑞）；裘派（裘盛戎）；袁派（袁世海）；钱派（钱金福）；黄派（黄润甫）。</td>
+                
+            </tr>
+            <tr>
+                <td>丑角</td>
+                <td colspan="3">萧派（萧长华）；傅派（傅小山）；叶派（叶盛章）。</td>   
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="index5">
+        <h2 id="i5" style="text-align: center;">5-戏曲评价</h2>
+        <p>傅谨：京剧是中国文化传统的重要表征之一。它是“地方戏时代”出现的最重要的剧种，是雅文化在中国文化整体中渐趋衰落的时代变革的产物。
+            相对于超越了特定地域审美趣味的昆曲而言，它更多地是特定地域文化的产物；相对于昆曲所代表的文人士大夫趣味，
+            它更接近于底层和民间的趣味，京剧的剧目系统更充分体现出其历史叙述的民间性或曰草根特性。</p>
+        <p>法国荒诞戏剧家让·热内：京剧的主题、结构、表现手法之精妙绝顶。 </p>
+        <p>英国著名戏剧理论家和舞美设计家戈登·克雷：中国京剧已经比西方任何其他戏剧更加成为一种独立而优秀的艺术形式。</p>
+        <img src="images/i5.webp" style="width:100%">
+        <p> 前苏联著名剧作家特莱杰亚考亚考夫：中国戏剧蕴含着一种理性和国际性戏剧的种子，它那精确的方式方法可以适用于唤醒并引导磨炼过的群众争取一个美好的世界。</p>
+            
+    </div>
+    </div>
+    <footer class="footer">    
+        <p><a href="#top">返回顶部</a></p>
+        <h6>Copyright 2022 刘昊旸 All rights reserved.</h6>
+    </footer>
+</div>
+<script type="text/javascript">  
+    let code;
+    document.getElementById("code").onclick=changeImg;  
+    function changeImg(){  
+        let arrays=new Array(  
+            '1','2','3','4','5','6','7','8','9','0',  
+            'a','b','c','d','e','f','g','h','i','j',  
+            'k','l','m','n','o','p','q','r','s','t',  
+            'u','v','w','x','y','z',  
+            'A','B','C','D','E','F','G','H','I','J',  
+            'K','L','M','N','O','P','Q','R','S','T',  
+            'U','V','W','X','Y','Z'               
+        );  
+        code='';
+        for(let i=0;i<4;i++){  
+            let r=parseInt(Math.random()*arrays.length);  
+            code+=arrays[r];  
+        }  
+        document.getElementById('code').innerHTML=code; 
+    }         
+    window.onload=changeImg();
+    function check(){  
+        let input_code=document.getElementById('vcode').value;    
+        if(input_code.toLowerCase()==code.toLowerCase())  
+        {  
+            return true;  
+        }  
+        alert("请输入正确的验证码!");  
+        return false;  
+    }  
+    let nav1=document.querySelector("#zhuce");
+    let nav2=document.querySelector("#dl");
+    let flex=document.querySelector("#denglu");
+    window.onload=function noshow(){
+        flex.style.display='none';
+    }
+    nav1.onclick=function show()
+    {
+        flex.style.display='block';
+    }
+    nav2.onclick=function show()
+    {
+        flex.style.display='block';
+    }
+    </script>
+</body>
+</html>
