@@ -1,0 +1,36 @@
+table
+{
+align="center";
+margin:0 auto;
+}
+body {
+    font-family='微软雅黑';
+    text-align: center;
+    background:url("images/background.gif");
+       /* width: 100%; 
+      margin: 0 auto; */
+}
+h1{
+    letter-spacing: 2px;
+}
+h2{
+    color: #333;
+    font-size: 22px;
+}
+p{
+    color: #333;
+    font-size: 16px;
+    line-height: 2em;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+img{
+    align-self: center;
+}
+textarea{
+    text-align: left;
+    margin: 0 auto;
+}

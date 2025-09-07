@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica", "Arial", serif;
+            color: #333;
+            /* background-color: #ccc; */
+            margin: 1em 10%;
+        }
+
+        #container {
+            width: 600px;
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #333;
+            background-color: transparent;
+        }
+
+        a {
+            color: #c60;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            padding: 1em;
+            list-style: none;
+        }
+
+        #imagegallery {}
+
+        #imagegallery a {
+            margin: 0px 20px 20px 0px;
+            padding: 0px;
+            display: inline;
+        }
+
+        #imagegallery a img {
+            border: 0;
+            width: 100px;
+            height: 150px;
+        }
+
+        #image {
+            width: 300px;
+            height: 450px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h2>
+            相册
+        </h2>
+
+        <div id="imagegallery">
+            <a href="#" data-img="images/1.jpg" title="照片A">
+                <img src="images/1-small.jpg" width="100px" alt="照片1" />
+            </a>
+            <a href="#" data-img="images/2.jpg" title="照片B">
+                <img src="images/2-small.jpg" width="100px" alt="照片2" />
+            </a>
+            <a href="#" data-img="images/3.jpg" title="照片C">
+                <img src="images/3-small.jpg" width="100px" alt="照片3" />
+            </a>
+            <a href="#" data-img="images/4.jpg" title="照片D">
+                <img src="images/4-small.jpg" width="100px" alt="照片4" />
+            </a>
+        </div>
+
+        <div style="clear:both"></div>
+
+        <img id="image" src="images/1.jpg" alt="" width="450px" />
+        <p>照片A</p>
+        <p>照片B</p>
+        <p>照片C</p>
+        <p>照片D</p>
+
+    </div>
+<!--  
+    步骤：
+    1-先找到image这个元素，然后修改它的src属性；  
+    2-
+-->
+    <script>
+        let imagegallery=document.querySelector('#imagegallery');
+        let a=document.querySelectorAll('a');
+        let img=document.querySelectorAll('img');
+        let image=document.getElementById('image');
+        let p=document.querySelectorAll('p');
+        for(let i=0;i<a.length;i++)
+        {
+            //a[i].getAttribute('data-img');//为什么获取不了？因为没存
+            a[i].setAttribute('index',i);
+            window.onload=function(){
+            for(let i=0;i<p.length;i++)
+            {
+                p[i].style.display='none';
+            }
+                p[0].style.display='block';
+            }
+            a[i].onclick=function show()
+            {
+                for(let i=0;i<p.length;i++)
+            {
+                p[i].style.display='none';
+            }
+                let index=this.getAttribute('index');
+               image.src=this.getAttribute('data-img');
+                p[index].style.display='block';
+            }
+        }
+        console.log(a.length);
+    </script>
+</body>
+
+</html>
